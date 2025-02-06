@@ -147,7 +147,7 @@ h1 {
 
 /* I used "opacity" and "transform" properties to control the visibility and positioning of the button, respectively.
      I choose "transition" property to create a smooth transition when the button becomes visible on hover. */
-.card-btn {
+.add-to-cart{
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
@@ -170,11 +170,11 @@ h1 {
 	-o-transform: translateX(-50%);
 }
 
-.product-card:hover .card-btn {
+.product-card:hover .add-to-cart {
 	opacity: 1;
 }
 
-.card-btn:hover {
+.add-to-cart:hover {
 	background-color: #fff;
 }
 

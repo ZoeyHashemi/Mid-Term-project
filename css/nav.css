@@ -6,7 +6,8 @@ By setting the margin and padding of all elements to 0, I can avoid unexpected s
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 .ribbon {
@@ -80,7 +81,19 @@ As my design it contains a logo, some navigation items, search bar, user ,and  s
 .nav-items a img {
 	width: 30px;
 }
-
+ul{
+	list-style: none;
+}
+.list-social{
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.75rem;
+	
+}
+fa-brands, .fab {
+	color: #9f6f85;
+	font-size: 1.25rem;
+}
 .link-container {
 	width: 100%;
 	display: flex;
@@ -89,6 +102,10 @@ As my design it contains a logo, some navigation items, search bar, user ,and  s
 	list-style: none;
 	border-top: 1px solid #d1d1d1;
 
+}
+.social-icons li a  {
+	display: inline-block;
+	align-items: center;
 }
 
 .link {
@@ -115,6 +132,7 @@ As my design it contains a logo, some navigation items, search bar, user ,and  s
 .link:hover::after {
 	width: 100%;
 }
+
 
 /* I have added some CSS rules to hide the hamburger icon and navigation toggle button, which are used for mobile devices, when viewed on a desktop computer. */
 .nav-toggle {

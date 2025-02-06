@@ -6,26 +6,33 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="img/favicon.ico">
       <title>AR Design</title>
+      
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" type="text/css" />
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
       <link  href="css/home.css" rel="stylesheet">
    </head>
    <body>
       <!-- Skip link -->
       <!-- Skip link: Provides a way for users to jump directly to the main content of the page -->
       <a href="#main-content" class="skip-link"> Skip to the main content</a>
-      <nav class="navbar" ></nav>
+      <nav class="navbar" ></nav> 
       <!-- banner section -->
       <!-- this tag displays the main heading and a link to discover more about the new arrivals, along with a carousel of images, I used divs to structure the content within the header tag -->
-      <header class="banner-section " role="banner">
-         <div class="content">
-            <!-- I highlight the new arrivals section with a main heading -->
-            <h1 class="heading">New Arrival</h1>
-            <div class="sub.heading">
-               <a class="discover-link" href="#">Discover More</a>
-               <div class="owl-dots" aria-label="Carousel">
-                  <span class="owl-dot" role="button" aria-label="Jump to slide 1"></span>
-                  <span class="owl-dot" role="button" aria-label="Jump to slide 2"></span>
-                  <span class="owl-dot" role="button" aria-label="Jump to slide 3"></span>
-                  <span class="owl-dot" role="button" aria-label="Jump to slide 4"></span>
+      <!-- banner section -->
+      <header class="banner-section" role="banner">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 text-center">
+                  <h1 class="heading">New Arrival</h1>
+                  <div class="sub-heading">
+                     <a class="discover-link btn btn-primary" href="#">Discover More</a>
+                     <div class="owl-dots" aria-label="Carousel">
+                        <span class="owl-dot" role="button" aria-label="Jump to slide 1"></span>
+                        <span class="owl-dot" role="button" aria-label="Jump to slide 2"></span>
+                        <span class="owl-dot" role="button" aria-label="Jump to slide 3"></span>
+                        <span class="owl-dot" role="button" aria-label="Jump to slide 4"></span>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -38,6 +45,7 @@
            and consists of a product image and product info. The product image and info are each contained within 
            their own divs with appropriate classes. -->
       <section class="product" role="region" aria-label="Best Selling Products">
+         <div class="container">
          <h2 class="product-category">Best Selling</h2>
          <button class="pre-btn" aria-label="Previous item"><img src="img/arrow.png" alt="arrow to back item"></button>
          <button class="nxt-btn" aria-label="Next item"><img src="img/arrow.png" alt="arrow to next item"></button>
@@ -47,19 +55,11 @@
                   <span class="favorite">
                   <img src="img/love.png" class="add-favorite" alt="heart icon ">
                   </span>
-                  <img src="img/home/red-dress-320_x_452.png"
-                     srcset="img/home/red-dress-320_x_452.png 320w,
-                     img/home/red-dress-960_x_1357.png 960w,
-                     img/home/red-dress-1280_x_1810.png 1280w"
-                     sizes="(max-width: 767px) 100vw,
-                     (min-width: 768px) and (max-width: 1279px) 50vw,
-                     (min-width: 1280px) 40vw"
-                     class="card-img"
-                     alt="A woman with red dress">
-                  <button class="card-btn">Add To Cart</button>
+                  <img src="img/home/red-dress-320_x_452.png" class="img-fluid" alt="A woman with red dress">
+                  <button class="add-to-cart" data-name="Product 1" data-price="59.00" data-image="img/home/red-dress-320_x_452.png">Add To Cart</button>
                </div>
                <div class="product-info">
-                  <h2 class="product-name ">Joiya</h2>
+                  <h3 class="product-name ">Joiya</h3>
                   <p class="product-short-info">Cap Sleeve Knee Length Dress</p>
                   <span class="price">EXTRA 30% OFF</span>
                   <br><span class="actual-price">$59.00</span><span class="sale-price">$41.30</span>
@@ -70,16 +70,8 @@
                   <span class="favorite">
                   <img src="img/love.png" class="add-favorite" alt="heart icon ">
                   </span>
-                  <img src="img/product-2.jpg"
-                     srcset="img/home/product-2-320_x_436.jpg 320w,
-                     img/home/product-2-960_x_1309.jpg 960w,
-                     img/home/product-2-1280_x_1749.jpg 1280w"
-                     sizes="(max-width: 767px) 100vw,
-                     (min-width: 768px) and (max-width: 1279px) 50vw,
-                     (min-width: 1280px) 40vw"
-                     class="card-img"
-                     alt="A girl Model with creamy  sleeveless dress">
-                  <button class="card-btn">Add To Cart</button>
+                  <img src="img/home/product-2-320_x_436.jpg" class="img-fluid" alt="A girl Model with creamy  sleeveless dress">
+                  <button class="add-to-cart" data-name="Product 2" data-price="56.00" data-image="img/home/product-2-320_x_436.jpg">Add To Cart</button>
                </div>
                <div class="product-info">
                   <h2 class="product-name ">Coraal</h2>
@@ -93,16 +85,8 @@
                   <span class="favorite">
                   <img src="img/love.png" class="add-favorite" alt="heart icon ">
                   </span>
-                  <img src="img/home/product-1-320_x_320.jpg"
-                     srcset="img/home/product-1-320_x_320.jpg 320w,
-                     img/home/product-1-960_x_960.jpg 960w,
-                     img/home/product-1-1280_x_1280.jpg 1280w"
-                     sizes="(max-width: 767px) 100vw,
-                     (max-width: 991px) 50vw,
-                     33.33vw"
-                     class="card-img"
-                     alt="A woman model with purple dress">
-                  <button class="card-btn">Add To Cart</button>
+                  <img src="img/home/product-1-320_x_320.jpg" class="img-fluid" alt="A woman model with purple dress">
+                  <button class="add-to-cart" data-name="Product 3" data-price="59.00" data-image="img/home/product-1-320_x_320.jpg">Add To Cart</button>
                </div>
                <div class="product-info">
                   <h2 class="product-name">Maria</h2>
@@ -116,16 +100,8 @@
                   <span class="favorite">
                   <img src="img/love.png" class="add-favorite" alt="heart icon ">
                   </span>
-                  <img src="img/product-2.jpg"
-                     srcset="img/home/product-4-320_x_436.jpg 320w,
-                     img/home/product-4-960_x_1309.jpg 960w,
-                     img/home/product-4-1280_x_1749.jpg 1280w"
-                     sizes="(max-width: 767px) 100vw,
-                     (min-width: 768px) and (max-width: 1279px) 50vw,
-                     (min-width: 1280px) 40vw"
-                     class="card-img"
-                     alt="A girl Model with black dress">
-                  <button class="card-btn">Add To Cart</button>
+                  <img src="img/home/product-4-320_x_436.jpg" class="img-fluid" alt="A girl Model with black dress">
+                  <button class="add-to-cart" data-name="Product 4" data-price="59.00" data-image="img/home/product-4-320_x_436.jpg">Add To Cart</button>
                </div>
                <div class="product-info">
                   <h2 class="product-name">Marggoh</h2>
@@ -139,16 +115,8 @@
                   <span class="favorite">
                   <img src="img/love.png" class="add-favorite" alt="heart icon ">
                   </span>
-                  <img src="img/home/product-6-320_x_437.jpg"
-                     srcset="img/home/product-6-320_x_437.jpg 320w,
-                     img/home/product-6-960_x_1310.jpg 960w,
-                     img/home/product-6-1280_x_1747.jpg 1280w"
-                     sizes="(max-width: 767px) 100vw,
-                     (max-width: 991px) 50vw,
-                     33.33vw"
-                     class="card-img"
-                     alt="A woman model wearing a blue dress">
-                  <button class="card-btn" >Add To Cart</button>
+                  <img src="img/home/product-6-320_x_437.jpg" class="img-fluid" alt="A woman model wearing a blue dress">
+                  <button class="add-to-cart" data-name="Product 5" data-price="66.00" data-image="img/home/product-6-320_x_437.jpg">Add To Cart</button>
                </div>
                <div class="product-info">
                   <h2 class="product-name">Karenie</h2>
@@ -162,16 +130,8 @@
                   <span class="favorite">
                   <img src="img/love.png" class="add-favorite" alt="heart icon ">
                   </span>
-                  <img src="img/home/product-5-320_x_437.jpg"
-                     srcset="img/home/product-5-320_x_437.jpg 320w,
-                     img/home/product-5-960_x_1310.jpg 960w,
-                     img/home/product-5-1280_x_1747.jpg 1280w"
-                     sizes="(max-width: 767px) 100vw,
-                     (max-width: 991px) 50vw,
-                     33.33vw"
-                     class="card-img"
-                     alt="A woman model with floral top dress">
-                  <button class="card-btn">Add To Cart</button>
+                  <img src="img/home/product-5-320_x_437.jpg" class="img-fluid" alt="A woman model with floral top dress">
+                  <button class="add-to-cart" data-name="Product 6" data-price="59.00" data-image="img/home/product-5-320_x_437.jpg">Add To Cart</button>
                </div>
                <div class="product-info">
                   <h2 class="product-name">Amorita</h2>
@@ -180,6 +140,7 @@
                   <br><span class="actual-price">$59.00</span><span class="sale-price">$41.30</span>
                </div>
             </div>
+         </div>
          </div>
       </section>
       <!-- collection -->
@@ -275,5 +236,11 @@
       <script src="js/nav.js"></script>
       <script src="js/footer.js"></script> 
       <script src="js/home.js"></script>
+      <script src="js/cart.js"></script>
+      <script src="js/wishlist.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     
    </body>
 </html>
