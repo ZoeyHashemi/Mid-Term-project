@@ -60,6 +60,7 @@ As my design it contains a logo, some navigation items, search bar, user ,and  s
 
 .brand-logo {
 	height: 100px;
+	width: 100%;
 
 }
 
@@ -78,9 +79,9 @@ As my design it contains a logo, some navigation items, search bar, user ,and  s
 	margin-left: 20px;
 }
 
-.nav-items a img {
+ nav img {
 	width: 30px;
-}
+} 
 ul{
 	list-style: none;
 }
